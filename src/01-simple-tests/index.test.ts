@@ -41,13 +41,13 @@ describe('simpleCalculator tests', () => {
     // Write your test here
     const input = { a: 12, b: 2, action: 'divide' };
     const result = simpleCalculator(input);
-    expect(result).toBe(null);
+    expect(result).toBeNull();
   });
 
   test('should return null for invalid arguments', () => {
     // Write your test here
     const input = { a: '12', b: 2, action: Action.Add };
     const result = simpleCalculator(input);
-    expect(result).toBe(null);
+    expect(result).toBeNull();
   });
 });
